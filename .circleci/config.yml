@@ -45,7 +45,7 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/buildpack-deps:trusty
-        steps
+        steps:
         -chekout
         -run:
           name: Deploy app on heroku
