@@ -27,7 +27,7 @@ public class CarController {
 
     }
 
-    @GetMapping("/car")
+    @GetMapping("/")
     public String getCar(Model model) {
         model.addAttribute("cars",cars);
         model.addAttribute("newCar",new Car());
@@ -38,6 +38,6 @@ public class CarController {
     public String addCar(@ModelAttribute Car car){
         System.out.println(car);
         cars.add(car);
-        return "redirect:/car";
+        return "redirect:/";
     }
 }
