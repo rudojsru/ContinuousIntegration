@@ -46,7 +46,7 @@ jobs:
       # specify the version you desire here
       - image: circleci/buildpack-deps:trusty
     steps:
-      - chekout
+      - checkout
       - run:
           name: Deploy app on heroku
           command:
