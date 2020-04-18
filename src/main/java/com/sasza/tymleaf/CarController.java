@@ -14,6 +14,11 @@ import java.util.List;
 @Controller
 public class CarController {
     private List<Car> cars;
+
+    public List<Car> getCars() {
+        return cars;
+    }
+
     public CarController() {
         Car car1 = new Car("BMW","5");
         Car car2 = new Car("Fiat","1255");
